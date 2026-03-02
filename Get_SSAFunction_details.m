@@ -1,4 +1,4 @@
-%% 设置适应度函数并配置初始参数
+%% 设置适应度函数并配置初始参数 
 % This function containts full information and implementations of the benchmark
 % lb is the lower bound: lb=[lb_1,lb_2,...,lb_d]
 % up is the uppper bound: ub=[ub_1,ub_2,...,ub_d]
@@ -27,4 +27,5 @@ x(5)=int8(x(5));   % 约束最大训练次数符合if语句
 Accuracy = Seismic_LSTM_impl(x(1),x(2),x(3),x(4),x(5));
 % Accuracy = Acoustic_LSTM_impl(x(1),x(2),x(3),x(4),x(5));
 end
+
 
