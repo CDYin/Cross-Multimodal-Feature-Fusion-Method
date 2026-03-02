@@ -1,4 +1,4 @@
-%% 获取连续小波变换时频二维数据
+%% 获取连续小波变换时频二维数据 
 function cwt_rgb = get_pic_CWT(seismicdata, motherwavelet)
 % 使用CWT得到时频图
 [cfs,~] = cwt(seismicdata, motherwavelet);
@@ -10,4 +10,5 @@ imgSize = [224, 224];
 % jet(m)    返回具有m种颜色的颜色图
 im = ind2rgb(im2uint8(mat2gray(abs(cfs))), jet(256));
 cwt_rgb = imresize(im, imgSize);
+
 end
