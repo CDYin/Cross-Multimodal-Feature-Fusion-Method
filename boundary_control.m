@@ -1,4 +1,4 @@
-function [X] = boundary_control(sizepop, dim, X, ub, lb)
+function [X] = boundary_control(sizepop, dim, X, ub, lb) 
     %边界控制
     for m = 1:sizepop
         for n = 1: dim
@@ -11,4 +11,5 @@ function [X] = boundary_control(sizepop, dim, X, ub, lb)
         end
     end
 end
+
 
