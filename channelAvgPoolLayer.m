@@ -1,4 +1,4 @@
-classdef channelAvgPoolLayer < nnet.layer.Layer & nnet.layer.Acceleratable% ...
+classdef channelAvgPoolLayer < nnet.layer.Layer & nnet.layer.Acceleratable% ... 
     % & nnet.layer.Formattable ... % (Optional)
     % & nnet.layer.Acceleratable % (Optional)
 
@@ -51,4 +51,5 @@ classdef channelAvgPoolLayer < nnet.layer.Layer & nnet.layer.Acceleratable% ...
             X=X(1:H,1:W,1,1:B);
         end
     end
+
 end
