@@ -1,4 +1,4 @@
-%% 此函数初始化搜索代理的第一次填充
+%% 此函数初始化搜索代理的第一次填充 
 function Positions=SSA_initialization(SearchAgents_num,dim,ub,lb)
 Positions = zeros(SearchAgents_num, dim);
 % Positions(1,:)=rand(1,dim);
@@ -24,4 +24,5 @@ for i=1:dim
     lb_i=lb(i);
     % 每个变量的范围在最大最小值之间
     Positions(:,i)=rand(SearchAgents_num,1).*(ub_i-lb_i)+lb_i;
+
 end
