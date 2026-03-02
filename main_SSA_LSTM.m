@@ -1,4 +1,4 @@
-%% SSA优化LSTM
+%% SSA优化LSTM 
 
 % fobj                  设定适应度函数
 % dim                   设定维度
@@ -58,5 +58,6 @@ string = {'测试集预测结果对比'; ['准确率=' num2str((1-Accuracy)*100)
 title(string)
 xlim([1 Num_Test])
 grid
+
 
 
