@@ -1,4 +1,4 @@
-%% 获取MFCC二维数据
+%% 获取MFCC二维数据 
 function mel_rgb = get_pic_MEL(audiodata, fs)
 % 以采样率fs返回音频输入的mel频谱图。 该函数将输入的列视为单独的通道。
 melSpec = melSpectrogram(audiodata,fs,...
@@ -11,4 +11,5 @@ melSpec = melSpectrogram(audiodata,fs,...
 imgSize = [224, 224];
 im = ind2rgb(im2uint8(mat2gray(log(melSpec))), jet(256));
 mel_rgb = imresize(im, imgSize);
+
 end
